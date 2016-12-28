@@ -12,7 +12,7 @@ import UIKit
 class CategoryListViewController: UIViewController {
 
   var categories: [Category] = Category.all()
-  var selectedCategory: Category = .popular
+  var selectedCategory: Category = .uncategorized
   
   @IBOutlet weak var tableView: UITableView!
   lazy var cellHeight: CGFloat = {
@@ -69,9 +69,9 @@ extension CategoryListViewController: UITableViewDataSource {
     }
     let category = categories[indexPath.row]
     cell.titleLabel.text = category.title()
-    cell.descriptionLabel.text = category.description()
-    cell.categoryImageView.image = category.image()
-    cell.backgroundColor = category.color().withAlphaComponent(0.95)
+    //cell.descriptionLabel.text = category.description()
+    //cell.categoryImageView.image = category.image()
+    //cell.backgroundColor = category.color().withAlphaComponent(0.95)
     return cell
   }
   

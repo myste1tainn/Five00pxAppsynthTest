@@ -105,7 +105,7 @@ class PhotoScroller: NSObject {
   func loadNext() {
     hasLoadedNextPage = true
     currentPage += 1
-    Five00px.getPhotos(category: category ?? .popular, page: currentPage, num: pageLimit)
+    Five00px.getPhotos(category: category ?? .uncategorized, page: currentPage, num: pageLimit)
     .then { response -> Void in
       self.hasLoadedNextPage = false
       self.currentPage = response.currentPage
