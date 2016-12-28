@@ -1,0 +1,6 @@
+framework module Pods_Five00Pixels {
+  umbrella header "Pods-Five00Pixels-umbrella.h"
+
+  export *
+  module * { export * }
+}
