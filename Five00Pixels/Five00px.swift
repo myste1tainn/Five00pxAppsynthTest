@@ -22,7 +22,7 @@ open class Five00px {
     return Promise<GetPhotosResponse>{ fullfill, reject in
       let endpoint = API.endpoint(forPath: "photos")
       let parameters: [String: Any] = [
-        "feature": "\(category)",
+        "only": category.title(),
         "page": page,
         "rpp": num,
         "image_size": "3",

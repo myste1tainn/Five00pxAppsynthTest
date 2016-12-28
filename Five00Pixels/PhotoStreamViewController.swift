@@ -39,7 +39,7 @@ class PhotoStreamViewController: UIViewController, HasTakeoffView, HasLandingAre
   
   override func viewWillDisappear(_ animated: Bool) {
     super.viewWillDisappear(animated)
-    self.navigationController?.navigationBar.barTintColor = Category.editors.color()
+    self.navigationController?.navigationBar.barTintColor = Category.uncategorized.color()
   }
   
   func setupPhotoScroller() {
